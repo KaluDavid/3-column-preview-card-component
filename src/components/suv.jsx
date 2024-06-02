@@ -1,12 +1,12 @@
 import React from "react";
 import suvImage from "../img/icon-suvs.svg";
+import "../styles/components.scss";
 
 export function Suv(props) {
   return (
     <>
-      <main>
-
-      <img src={suvImage} alt="" />
+      <main className="suv"> 
+        <img src={suvImage} alt="" />
 
         <h1>{props.suvName}</h1>
 
@@ -15,9 +15,7 @@ export function Suv(props) {
           for your next family vacation and off-road adventures.
         </article>
 
-        <button>
-            Learn More
-        </button>
+        <button>Learn More</button>
       </main>
     </>
   );

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+// COLORS
+$lightGray: hsl(0, 0%, 95%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$darkCyan: hsl(184, 100%, 22%);
+$brightOrange: hsl(31, 77%, 52%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+// FONTS
+$LexendDeca: 'Lexend Deca';
+$BigShouldersDisplay: 'Big Shoulders Display';
+
+
+// Components styles
+ 
+// Button style
+@mixin buttonStyles{
+    background-color: $lightGray;
+    padding: 14px 25px;
+    width: 50%;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: $LexendDeca;
+}
+
+// mainstyles
+@mixin mainStyles{
+display: flex;
+flex-direction: column;
+padding: 50px;
+gap: 50px;
+
+}
+
+

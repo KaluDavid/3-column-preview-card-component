@@ -1,10 +1,11 @@
 import React from "react";
 import luxuryImage from "../img/icon-luxury.svg";
+import "../styles/components.scss";
 
 export function Luxury(props) {
   return (
     <>
-      <main>
+      <main className="luxury">
         <img src={luxuryImage} alt="" />
 
         <h1>{props.luxuryName}</h1>

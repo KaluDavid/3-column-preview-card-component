@@ -1,0 +1,56 @@
+@import './variables.scss';
+
+button{
+    @include buttonStyles();
+};
+
+main{
+    @include mainStyles();
+};
+
+img{
+width: 22%;
+};
+
+h1{
+   color:  $lightGray;
+font-family: $BigShouldersDisplay;
+}
+
+article{
+    color: $transparentWhite;
+    font-family: $LexendDeca;
+}
+
+// Components Styles
+.sedans{
+
+    button{
+        color: $brightOrange;
+    }
+
+background-color: $brightOrange;
+};
+
+
+
+.suv{
+
+    button{
+        color: $darkCyan;
+    }
+
+    background-color: $darkCyan;
+};
+
+
+
+.luxury{
+
+    button{
+        color: $veryDarkCyan;
+    }
+
+    background-color: $veryDarkCyan;
+};
+

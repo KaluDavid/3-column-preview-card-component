@@ -3,15 +3,18 @@ import { Sedan } from "./components/sedan";
 import { Suv } from "./components/suv";
 import { Luxury } from "./components/luxury";
 import PropTypes from "prop-types";
+import "./styles/main.scss";
 
 export default function App() {
   return (
     <>
-      <Sedan sedanName="SEDANS" />
+      <div className="main">
+        <Sedan sedanName="SEDANS" />
 
-      <Suv suvName="SUVS" />
+        <Suv suvName="SUVS" />
 
-      <Luxury luxuryName="LUXURY" />
+        <Luxury luxuryName="LUXURY" />
+      </div>
     </>
   );
 }

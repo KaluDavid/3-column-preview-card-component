@@ -1,10 +1,11 @@
 import React from "react";
 import sedansImage from "../img/icon-sedans.svg";
+import "../styles/components.scss";
 
 export function Sedan(props) {
   return (
     <>
-      <main>
+      <main className="sedans">
         <img src={sedansImage} alt="" />
         <h1>{props.sedanName}</h1>
 
