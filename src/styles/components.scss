@@ -1,56 +1,96 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-button{
-    @include buttonStyles();
-};
+button {
+  @include buttonStyles();
 
-main{
-    @include mainStyles();
-};
+  @include sm {
+    padding: 12px 0px;
+    width: 90%;
+  }
 
-img{
-width: 22%;
-};
+  @include m {
+    width: 60%;
+  }
 
-h1{
-   color:  $lightGray;
-font-family: $BigShouldersDisplay;
+  @include lg {
+    width: 90%;
+  }
+  @include xl {
+    width: 50%;
+  }
 }
 
-article{
-    color: $transparentWhite;
-    font-family: $LexendDeca;
+main {
+  @include mainStyles();
+}
+
+img {
+  @include sm {
+    width: 30%;
+  }
+
+  @include lg {
+    width: 50%;
+  }
+
+  @include xl {
+    width: 30%;
+  }
+}
+
+h1 {
+  color: $lightGray;
+  font-family: $BigShouldersDisplay;
+}
+
+article {
+  color: $transparentWhite;
+  font-family: $LexendDeca;
+  line-height: 30px;
 }
 
 // Components Styles
-.sedans{
+.sedans {
+  button {
+    color: $brightOrange;
+  }
 
-    button{
-        color: $brightOrange;
-    }
+  background-color: $brightOrange;
 
-background-color: $brightOrange;
-};
+  @include sm {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  @include lg {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
 
+.suv {
+  button {
+    color: $darkCyan;
+  }
 
+  background-color: $darkCyan;
+}
 
-.suv{
+.luxury {
+  button {
+    color: $veryDarkCyan;
+  }
 
-    button{
-        color: $darkCyan;
-    }
+  background-color: $veryDarkCyan;
 
-    background-color: $darkCyan;
-};
-
-
-
-.luxury{
-
-    button{
-        color: $veryDarkCyan;
-    }
-
-    background-color: $veryDarkCyan;
-};
-
+  @include sm {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  @include lg {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
