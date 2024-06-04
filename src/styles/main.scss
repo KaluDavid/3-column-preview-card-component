@@ -13,15 +13,12 @@ body {
   height: 100vh;
   padding: 12% 5%;
 
-  @include xl {
-    margin-bottom: 9%;
-  }
 }
 
 .main {
   display: flex;
   flex-direction: column;
-
+  padding-bottom: 15%;
   @include lg {
     flex-direction: row;
   }
